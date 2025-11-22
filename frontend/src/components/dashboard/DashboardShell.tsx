@@ -1,18 +1,22 @@
 "use client";
 
 import Sidebar from "./Sidebar";
+import TopBar from "./TopBar";
+import KPICards from "./KPICards";
 
 export default function DashboardShell() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen shadow-l">
       {/* Sidebar on the left */}
-      <Sidebar />
+      <div className="m-3">
+        <Sidebar />
+      </div>
 
-      {/* Main Content */}
-      <main className="flex-1 p-8 bg-[#F3F3F3]">
-        <h1 className="text-[30px] font-regular mt-1">Dashboard</h1>
-        <h2 className="text-gray-600 mb-6">Ringkasan Bisnis Susu Bajai</h2>
-      </main>
+        <main className="flex-1 p-8 bg-[#FAFAFC]">
+          <TopBar />
+          <KPICards />
+        </main>
+
     </div>
   );
 }

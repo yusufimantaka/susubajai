@@ -10,10 +10,11 @@ export default function Sidebar() {
         flex-col 
         justify-between 
         w-64 
-        h-[100vh] 
-        bg-white 
-        border-r 
+        h-[96vh] 
+        bg-white
+        rounded-[16px]
         border-gray-200 
+        shadow-xl
         p-6
       "
     >

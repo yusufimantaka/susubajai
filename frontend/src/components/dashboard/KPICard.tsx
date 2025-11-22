@@ -22,7 +22,7 @@ export default function KPICard({ title, value, percent, icon }: KPICardProps) {
     >
       {/* Left section */}
       <div>
-        <p className="text-gray-500 text-sm">{title}</p>
+        <p className="text-[#6C432D] text-l">{title}</p>
 
         <h2 className="text-2xl font-semibold mt-1">{value}</h2>
 
